@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         tbhConversor.addTab(tbhConversor.newTabSpec("Monedas").setContent(R.id.tabMoneda).setIndicator("MONEDAS"));
         tbhConversor.addTab(tbhConversor.newTabSpec("Peso").setContent(R.id.tabpeso).setIndicator("Peso"));
+        tbhConversor.addTab(tbhConversor.newTabSpec("Almacenamiento").setContent(R.id.tabpeso).setIndicator("Almacenamiento"));
 
 
     }
