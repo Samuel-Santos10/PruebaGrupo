@@ -3,6 +3,7 @@ package com.ugb.pruebagrupo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TabHost;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +11,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TabHost tbhConversor = (TabHost)findViewById(R.id.tbhConversores);
+        tbhConversor.setup();
+
+        tbhConversor.addTab(tbhConversor.newTabSpec("Monedas").setContent(R.id.tabMoneda).setIndicator("MONEDAS"));
+        tbhConversor.addTab(tbhConversor.newTabSpec("Peso").setContent(R.id.tabpeso).setIndicator("Peso"));
+        tbhConversor.addTab(tbhConversor.newTabSpec("Almacenamiento").setContent(R.id.tabpeso).setIndicator("Almacenamiento"));
+
+
     }
 }
